@@ -1,4 +1,4 @@
-import { WeatherData } from '../services/weatherService';
+import type { WeatherData } from '../services/weatherService';
 import { getWeatherIcon } from '../services/outfitService';
 
 interface WeatherCardProps {

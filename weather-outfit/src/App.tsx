@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
 import { WeatherCard } from './components/WeatherCard';
 import { OutfitCard } from './components/OutfitCard';
-import { getWeatherByCity, WeatherData } from './services/weatherService';
-import { getOutfitRecommendation, OutfitRecommendation } from './services/outfitService';
+import { getWeatherByCity } from './services/weatherService';
+import type { WeatherData } from './services/weatherService';
+import { getOutfitRecommendation } from './services/outfitService';
+import type { OutfitRecommendation } from './services/outfitService';
 
 function App() {
   const [city, setCity] = useState('Seoul');

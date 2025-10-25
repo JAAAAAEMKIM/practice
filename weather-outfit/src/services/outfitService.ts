@@ -1,4 +1,4 @@
-import { WeatherData } from './weatherService';
+import type { WeatherData } from './weatherService';
 
 export interface OutfitRecommendation {
   style: string;
@@ -11,7 +11,6 @@ export interface OutfitRecommendation {
 export function getOutfitRecommendation(weather: WeatherData): OutfitRecommendation {
   const temp = weather.temperature;
   const condition = weather.condition.toLowerCase();
-  const windSpeed = weather.windSpeed;
 
   // Temperature-based recommendations
   if (temp < 0) {

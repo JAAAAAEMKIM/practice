@@ -1,4 +1,4 @@
-import { OutfitRecommendation } from '../services/outfitService';
+import type { OutfitRecommendation } from '../services/outfitService';
 
 interface OutfitCardProps {
   outfit: OutfitRecommendation;
